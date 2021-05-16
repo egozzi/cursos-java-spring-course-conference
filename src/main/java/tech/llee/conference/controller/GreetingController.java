@@ -14,4 +14,10 @@ public class GreetingController {
         model.put("message", "Olá Erico");
         return "greeting";
     }
+
+    @GetMapping("thyme")
+    public String greetingFromThyme (Map<String, Object> model) {
+        model.put("message", "Olá do Thymeleaf");
+        return "thyme";
+    }
 }
